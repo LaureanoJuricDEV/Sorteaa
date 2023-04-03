@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteaa</title>
+    <link rel="icon" href="logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="containerTitle">
+   <h1 id="buttonInicio">Sorteaa!</h1>
+</div>
+
+
+<main>
+    <!--Container Numeros-->
+
+    <div class="containerNumero" id="containerNumero">
+        <p>Numeros</p>
+        <span><i class="fa-sharp fa-solid fa-dice"></i></span>
+    </div>
+
+    <div class="lotteryNumber" id="lotteryNumber">
+      
+    <form id="formNumber">
+        
+        <div class="containerPrimerNumero">
+            <label for="primerNumero">Desde</label>
+            <input type="number" id="primerNumero" required>
+        </div>
+
+        <div class="containerSegundoNumero">
+           <label for="segundoNumero">Hasta</label> 
+           <input type="number" id="segundoNumero" required> 
+        </div>
+
+       <div class="containerCantidad">
+
+        <label for="cantidad">Cantidad a sortear</label>
+        <select id="cantidad" class="select">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+          </select>
+        </div>
+        
+        <div class="containerButton" id="containerButton">
+         <button class="sortear" id="sortear">Sortear</button>
+        </div>
+    </form>
+  
+    </div>
+   
+
+
+    <!--Container Equipos-->
+
+    <div class="containerEquipo" id="containerEquipo">
+     <p>Equipos</p>
+     <span><i class="fa-solid fa-network-wired"></i></span>
+    </div>
+  
+<div class="lotteryTeam" id="lotteryTeam">
+   
+    <div class="containerParticipante" id="containerParticipante">
+      <form id="formLotteryTeam">
+        <label for="containerPersonaValue" id="labelParticipante">Participantes</label>
+        <input type="text" id="containerPersonaIngresada" class="containerEquipoValue" required>
+        <input type="submit" class="submit" value="Agregar">
+      </form>
+    </div>
+
+    <div class="containerEquipoElegido" id="containerEquipoElegido">
+      <form id="formLotteryTeam2">
+        <label for="containerEquipoValue" id="labelEquipo">Equipos</label>
+        <input type="text" id="containerEquipoIngresado" class="containerEquipoValue" required>
+        <input type="submit" class="submit" value="Agregar">
+      </form>
+    </div>
+
+    <button class="sortearEquipo" id="sortearEquipo">Sortear</button>
+
+</div>
+    <!--Container Personas-->
+    <div class="containerPersona" id="containerPersona">
+        <p>Personas</p>
+        <span><i class="fa-solid fa-person-circle-question"></i></span>
+    </div>
+   
+    <div class="lotteryPerson" id="lotteryPerson">
+    
+        <div class="lotteryPersonForm">
+            <div class="containerSortearPersona" id="containerSortearPersona">
+                <form id="formPersonas">
+                  <label for="containerPersonaNombre" id="labelPersona">Participantes</label>
+                  <input type="text" class="personaIngresada" id="personaIngresada" required>
+                  <input type="submit" class="botonPersona" id="botonPersona" value="Agregar" >
+                </form>
+              </div>
+
+        <div></div>
+        <div class="containerSelect">     
+          <button id="sortearPersona">Sortear</button>
+        </div>
+          
+        
+     </div>
+    </div>
+
+   
+</main>
+
+<div  class="containerEquiposSorteados" id="containerEquiposSorteados">
+  <div class="personasSorteadas" id="personasSorteadas"></div>
+  <div class="equiposSorteados" id="equiposSorteados"></div>
+</div>
+
+
+
+<!--SCRIPTS NECESARIOS-->
+    <script src="https://kit.fontawesome.com/e7dc4602ee.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+</body>
+</html>
